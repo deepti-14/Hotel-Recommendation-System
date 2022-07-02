@@ -3,16 +3,13 @@ import os
 import pandas as pd
 from pandas import DataFrame,Series
 import numpy as np
-from sklearn.preprocessing import StandardScaler
 from sklearn import linear_model
 from sklearn.linear_model import Ridge
+from sklearn.preprocessing import StandardScaler
 
 app = Flask(__name__)
 
 df = pd.read_csv('C:\\Users\\Niraj\\Desktop\\Hotel_Reviews.csv')
-
-
-
 
 @app.route('/home', methods=['GET', 'POST'])
 @app.route('/', methods=['GET', 'POST'])
